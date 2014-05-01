@@ -39,7 +39,7 @@ Now that you're set up to make calls, take a look around the documentation
 
 Want a new endpoint, or some more detail?  Will do!
 
-Use the GitHub [issue tracker][broadstreet-issues]!
+Use the GitHub [issue tracker](broadstreet-issues)!
 
 ## License
 
