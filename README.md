@@ -18,7 +18,7 @@ will get you going (or `gem 'broadstreet'` if you're using a Gemfile).
 First, grab a `Broadstreet::Client` object, and give it an API key:
 
 ``` ruby
-client = Broadstreet::Client.new '123jf9fj1jf9'
+client = Broadstreet::Client.new 'd41d8cd98f00b204e9800998ecf8427e'
 ```
 
 Then you're good to go!  The objects returned to you are `Hashie::Mash`, so
@@ -39,7 +39,7 @@ Now that you're set up to make calls, take a look around the documentation
 
 Want a new endpoint, or some more detail?  Will do!
 
-Use the GitHub [issue tracker](broadstreet-issues)!
+Use the GitHub [issue tracker](https://github.com/broadstreetads/broadstreet-ruby/issues)!
 
 ## License
 
