@@ -34,6 +34,9 @@ end
 ## Now What?
 
 Now that you're set up to make calls, take a look around the documentation
+which lists all of the methods and options available:
+
+http://rubydoc.info/github/broadstreetads/broadstreet-ruby
 
 ## Issues?
 
