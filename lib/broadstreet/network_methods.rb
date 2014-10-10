@@ -35,6 +35,24 @@ module Broadstreet
       request(:post, 'api/1/networks', params).network
     end
 
+    # Create a network admin
+    #
+    # @param [Fixnum] network_id: The id of the network for the admin
+    # @param [Fixnum] user_id: The id of the user to make an admin
+    def create_network_admin(network_id, user_id)
+      params = { user_id: user_id }
+      request(:post, "api/1/networks/#{network_id}/network_admins", params)
+    end
+
+    # Remove a network admin
+    #
+    # @param [Fixnum] network_id: The id of the network for the admin
+    # @param [Fixnum] user_id: The id of the user to make an admin
+    def remove_network_admin(network_id, user_id)
+      params = { user_id: user_id }
+      request(:delete, "api/1/networks/#{network_id}/network_admins", params)
+    end
+
   end
 
 end

@@ -29,7 +29,11 @@ module Broadstreet
     def request(method, path, params = {})
       params[:access_token] = @access_token
       response = connection.send method, path, params
-      Hashie::Mash.new JSON.parse response.body
+      if method == :delete
+        nil
+      else
+        Hashie::Mash.new JSON.parse response.body
+      end
     end
 
     def connection
