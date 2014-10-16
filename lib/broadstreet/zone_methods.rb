@@ -48,7 +48,7 @@ module Broadstreet
     # @option params [String] :pricing_callback_url Callback for pricing on self-serve zones
     # @return [Hash] the updated zone detail
     def update_zone(zone_id, params)
-      request(:put, "api/1/zones/#{id}", params).zone
+      request(:put, "api/1/zones/#{zone_id}", params).zone
     end
 
   end
